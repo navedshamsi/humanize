@@ -1,0 +1,128 @@
+.explore{
+  margin-top: clamp(20px,3vw,220px);
+  border-radius: 12px;
+  width: clamp(320px,77vw,3200px);
+  padding: 1.5vw;
+  box-shadow: rgba(128, 128, 128, 0.33) 1px 2px 3px 1px; 
+  box-shadow: #3b83f637 1px 2px 3px 1px; 
+  position: relative;
+}
+.explore[open]{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 12px, rgba(0, 0, 0, 0.05) 0px 0px 10px; 
+}
+
+.explore summary{
+    width:clamp(320px,77vw,77vw);
+    min-height:2vh ;
+    display: flex;
+    justify-content: center;
+    font-size:clamp(12px,1.6vw ,120px);
+    font-weight:550;
+    user-select: text;
+    display:flex;
+}
+
+.explore:not([open]):hover{    
+    background: rgba(128, 128, 128, 0.067);
+}
+
+.explore[open] summary {
+    margin-bottom: 1vw;
+}
+
+.expandedCard{
+    padding:2vw;
+    min-height: clamp(500px,38vw,600px);
+    width: 92%;
+    margin: auto;
+    border-radius: 12px;   
+    margin-top: clamp(15px,1vw,300px);
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 12px, rgba(0, 0, 0, 0.05) 0px 0px 10px; 
+  margin-bottom: clamp(22px,1vw,100px);
+}
+.expandedCard{
+    background: white;
+}
+
+.expandedCard input{
+    outline: none;
+    padding: 1vw;
+    border:1.5px solid #3b82f6;
+    border-radius: 6px;
+    width: 97%;
+    min-height: 3vh;
+    margin: auto;
+  border:2px solid #ec4899 ;
+
+}
+
+
+.expandedCard label{
+    margin-top: clamp(15px,1vw,300px);
+    margin-bottom: 0.5vw;
+    font-size:clamp(18px,1.5vw,420px);
+    display: block;
+}
+
+.expandedCard textarea{
+    width: 97%;
+    min-height: 15vh;
+    padding: 1vw;
+    outline: none;
+    border-radius:  6px;
+    border:1.5px solid #3b82f6;
+  border:2px solid #ec4899 ;
+
+
+}
+
+.grey{
+    background-color: #f3f4f6;
+    border: none;
+}
+
+.expandedCard button{
+    width:clamp(120px,10vw,520px);
+    height: 6.5vh;
+    margin-top : 2vh;
+    border:0px;
+    border-radius: 12px;
+    outline: none;
+    background: linear-gradient(90deg, #3b82f6, #a855f7);
+    color:white;
+    font-size: 1.1rem;
+    float: right;
+}
+
+.cross{
+    background-size:auto;
+    background-repeat: no-repeat;
+    width: 4vw;
+    margin-left: 64vw;
+}
+
+.down{
+    margin-left: 1vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: clamp(22px,2vw,2vw);
+}
+
+.icons{
+ display: flex;
+ align-items: center;
+ width:clamp(310px,77vw,77vw);
+ height:3vh ;
+ position: relative;
+}
+.cross{
+    width: 2vh;
+}
+.icons div{
+  display: flex;
+}
+
+summary{
+    display: block;
+}

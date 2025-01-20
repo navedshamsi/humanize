@@ -4,34 +4,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2%;
+    padding-bottom: 9vh;
 }
 
 .tabs{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px, rgba(0, 0, 0, 0.05) 0px 0px 10px;
     width: 80vw;
-    height:11vh;
+    min-width: 330px;
+    height:clamp(70px,6.5vw,900px);
     border-radius: 12px;
     display:flex ;
     justify-content: start;
-    padding: 1.3%;
+    padding: clamp(12px,1.3vw,220px);
     align-items: center;
     box-sizing: border-box;
-    margin-top: 4%;
-    /* background-color: aqua; */
+    margin-top: clamp(20px,3vw,220px);
+    background: linear-gradient(90deg, #3b82f6, #a855f7);
+    box-shadow: rgba(0, 0, 0, 0.201) 0px 0px 12px, rgba(0, 0, 0, 0.100) 0px 0px 10px;
+}
+
+.tab{
+    width: 10%;
+    min-width: 90px;
+    color:  black;
+    font-weight:200;
+    margin-right: clamp(17px,1vw,42px);
+    border-radius: 12px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: #d0e6d9;
+   font:bolder;
+   font-size: 1.1rem;   
+   background: #3b82f6;
+   background: white;
+   color:black;
+   border: 1px solid black;
+
+   
 }
 
 .tab_content{
-    margin-top: 2%;
+    margin-top: clamp(20px,3vw,220px);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px, rgba(0, 0, 0, 0.05) 0px 0px 10px;
     width: 80vw;
+    min-width: 330px;
     min-height:60vh ;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    padding:1% 2% 2% 2%;
+    padding:clamp(3vh,2.2vw,120px);
+    padding-top: 15px;
     box-sizing: border-box;
-    /* gap: 1vh; */
 }
 
 .title:disabled{
@@ -39,6 +64,7 @@
     border: 0;
     color: black;
     font-size: 1.5em;
+    color:#3b82f6;
 }
 .title:enabled {
     font:bold;
@@ -46,16 +72,18 @@
 
 .title{
     border: 2px solid #3b82f6;
-
     background: transparent;
     outline: none;
     border: none;  
-    width:40%;
+    min-width:40%;
     border: 2px solid #3b82f6;
     padding:0 1% 0 1%;
-    height:5vh; 
+    min-height:5vh; 
     font-size: 1.2em;
     border-radius: 6px; 
+    background: white;
+    
+    
 }
 
 .description{
@@ -63,22 +91,13 @@
     overflow: hidden;
     border:0;
     outline: 0;
+    background: white;
 }
 .border {
     border: 2px solid #3b82f6;
 }
 
-.tab{
-    width: 10%;
-    color:  black;
-    font-weight:200;
-    margin-right: 1%;
-    border-radius: 12px;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-}
+
 
 .tabsSelected{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 3px, rgba(0, 0, 0, 0.24) 0px 0px 2px;
@@ -89,13 +108,15 @@
 }
 
 .tab_content label{
-  margin-top: 2%;
+  margin-top: clamp(15px,1.2vw,40px);
   margin-bottom: 1%;
   display: block;
-  width:20%;
+  min-width:20%;
   height: fit;
-  font:bold;
+  font:1000;
   font-size: 1.2em;
+  color:#2d6a4f;
+ 
 }
 
 
@@ -105,18 +126,26 @@
     outline:none
 } */
 .tab_content select{
-    width:20.5%;
-    height:5vh;
+    width:clamp(110px,15vw,360px);
+    font-size: clamp(20px,1.5vw,220px);
+    min-height:5vh;
     border-radius: 6px;
     outline: none;
     border: 2px solid #3b82f6;
-    padding:0 2% 0 1%;
+    padding:1%;
 
 }
 
 .tab_content button{
-  width:20%;
-  height: 20%;
+  width:clamp(120px,10vw,520px);
+  height: 6.5vh;
+  margin-top : 2vh;
+  border:0px;
+  border-radius: 12px;
+  outline: none;
+  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  color:white;
+  font-size: 1.1rem;
 }
 
 input[type="file"] {
@@ -128,16 +157,15 @@ input[type="file"] {
 }
 
 .lead{
-    width:20.5%;
+    width:35vh;
     height:fit-content;
-    /* background-color: #3b82f6; */
     font-size: 1.2em;
 }
+.lead span{
+    color:#3b82f6;
+}
 .ql-container{ 
-    border-radius: none;
     border: none !important;
-    padding: 0!important;
-    margin-left: -1%;
 }
 .ql-editor {
     font-size: 20px; /* Default font size for the editor */
@@ -145,10 +173,7 @@ input[type="file"] {
 }
 
 .descriptionReadOnly{
-     margin-left: -1%;
+     margin-left: -2vh;
 }
 
-input[type="file"] button {
- background-color: transparent;    
-}
 
