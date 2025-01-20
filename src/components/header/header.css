@@ -1,0 +1,10 @@
+.header{
+    width: 100vw;
+    height: 10vh;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px, rgba(0, 0, 0, 0.05) 0px 0px 10px;
+}
+.logo{
+    width: auto;
+    height: 100%;
+}
